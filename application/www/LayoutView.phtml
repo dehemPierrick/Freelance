@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DEHEM Pierrick Développeur Web</title>
-    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+    <meta name="description" content="Développeur web freelance depuis Décembre 2019 (Création ou refonte de site internet, Intégration Web).">
+    <meta name="author" content="Pierrick DEHEM">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
     <script src="https://kit.fontawesome.com/45ad43dc1d.js" crossorigin="anonymous"></script>
 
     <!-- Feuilles de styles de l'application -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
     <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
+    <!-- <link rel="stylesheet" href="<?= $wwwUrl ?>/css/bootstrap.min.css"> -->
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web|Ubuntu&display=swap" rel="stylesheet">
 
+    <link rel="canonical" href="https://pierrickdehem.ovh/" />
     <!-- Librairie jQuery -->
     <script src="<?= $wwwUrl ?>/js/jquery-3.4.1.min.js"></script>
 
@@ -23,19 +27,14 @@
 
 <!-- En-tête commune -->
 <header>
-    <h1>
-        <a href="<?= $requestUrl ?>">
-            <img src="<?= $wwwUrl ?>/images/logo.png"  alt="DEHEM Pierrick Développeur Web Freelance">DEHEM Pierrick Développeur Web Freelance
-        </a>
-    </h1>
     <nav>
-
+        <a href="/"><img src="<?= $wwwUrl ?>/images/logo.png"  alt="Logo"></a>
         <a href="<?= $requestUrl ?>/"><i class="fas fa-home"></i></a>
-        <a href="<?= $requestUrl ?>/competences">services</a>
-        <a href="<?= $requestUrl ?>/experiences">compétences</a>
-        <a href="<?= $requestUrl ?>/education">portfolio</a>
-        <a href="<?= $requestUrl ?>/portfolio">tarifs</a>
-        <a href="<?= $requestUrl ?>/contact">a propos</a>
+        <a href="#services">services</a>
+        <a href="#competences">compétences</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#tarifs">tarifs</a>
+        <a href="#aproposde">à propos de</a>
         <a href="<?= $requestUrl ?>/contact">contact</a>
     </nav>
 </header>
@@ -55,7 +54,6 @@
     <small id="licence">
         <p>Copyright © 2019 - <?php echo date("Y"); ?></p>
     </small>
-
 </footer>
 
 <!-- Code principal JavaScript de l'application -->
