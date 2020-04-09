@@ -1,0 +1,78 @@
+
+/* GLOBAL */
+* {
+
+	box-sizing: border-box;
+}
+
+html {font-size: 62.5%}
+
+body {
+	font-family: "Open Sans", arial, sans-serif;
+	min-height: 100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+h1, h2, h3 {
+
+}
+
+
+.container { /*permet de définir l'ensemble de la page */
+	max-width: 1500px; /* fixer la largeur du site */
+	padding: 25px; /* padding général */
+	margin: 0 auto; /* centrer le site */
+}
+
+
+.site-content{
+	-webkit-box-flex:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+}
+/* NAVIGATION */
+header {
+
+}
+
+nav {
+	padding: 25px;
+
+}
+
+nav a {
+
+
+}
+
+nav a:hover {
+
+}
+
+#logo {
+	float: left;
+}
+
+#logo img {
+	width: 100%;
+}
+
+
+/* FOOTER */
+footer {
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+}

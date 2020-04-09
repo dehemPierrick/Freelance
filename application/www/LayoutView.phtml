@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DEHEM Pierrick Développeur Web</title>
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/45ad43dc1d.js" crossorigin="anonymous"></script>
+
+    <!-- Feuilles de styles de l'application -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web|Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Librairie jQuery -->
+    <script src="<?= $wwwUrl ?>/js/jquery-3.4.1.min.js"></script>
+
+    <!-- JavaScript de l'application -->
+    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+</head>
+<body>
+
+<!-- En-tête commune -->
+<header>
+    <h1>
+        <a href="<?= $requestUrl ?>">
+            <img src="<?= $wwwUrl ?>/images/logo.png"  alt="DEHEM Pierrick Développeur Web Freelance">DEHEM Pierrick Développeur Web Freelance
+        </a>
+    </h1>
+    <nav>
+
+        <a href="<?= $requestUrl ?>/"><i class="fas fa-home"></i></a>
+        <a href="<?= $requestUrl ?>/competences">services</a>
+        <a href="<?= $requestUrl ?>/experiences">compétences</a>
+        <a href="<?= $requestUrl ?>/education">portfolio</a>
+        <a href="<?= $requestUrl ?>/portfolio">tarifs</a>
+        <a href="<?= $requestUrl ?>/contact">a propos</a>
+        <a href="<?= $requestUrl ?>/contact">contact</a>
+    </nav>
+</header>
+
+<main class="site-content">
+    <!-- Affichage du template lié à la vue -->
+    <?php include $this->viewData['template'] ?>
+</main>
+
+<!-- Pied de page commun -->
+<footer>
+    <ul class="social">
+        <li><a href="https://www.facebook.com/pierrickdehem"><i class="fab fa-facebook fa-2x"></i></a>
+        <li><a href="https://www.linkedin.com/in/pierrick-dehem-80561aa2/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://github.com/dehemPierrick"><i class="fab fa-github fa-2x"></i></a></li>
+    </ul>
+    <small id="licence">
+        <p>Copyright © 2019 - <?php echo date("Y"); ?></p>
+    </small>
+
+</footer>
+
+<!-- Code principal JavaScript de l'application -->
+<script src="<?= $wwwUrl ?>/js/main.js"></script>
+
+</body>
+</html>
